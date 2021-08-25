@@ -1,24 +1,32 @@
-import logo from './logo.svg';
 import './App.css';
+import { AboutMe } from './components/AboutMe/AboutMe';
+import ClientReviews from './components/ClientReview/ClientReviews';
+import Contact from './components/ContactMe/Contact';
+import ContentCreation from './components/ContentCreation/ContentCreation';
+import Footer from './components/Footer/Footer';
+import IntroSection from './components/IntroSection/IntroSection';
+import NewsLetter from './components/JoinNewsLetter/NewsLetter';
+import Navbar from './components/Navbar/Navbar';
+import ProjectsSection from './components/ProjectsSection/ProjectsSection';
+import RecentBlogs from './components/RecentBlogs/RecentBlogs';
+import { HorizontalLine } from './themes/GlobalStyles';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <Navbar/>
+      <IntroSection />
+      <ProjectsSection />
+      <ContentCreation />
+      <AboutMe />
+      <ClientReviews />
+      <Contact />
+      <RecentBlogs />
+      <HorizontalLine />
+      <NewsLetter />
+      <HorizontalLine />
+      <Footer />
+    </>
   );
 }
 
